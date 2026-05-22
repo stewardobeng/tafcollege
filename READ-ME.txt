@@ -1,0 +1,9 @@
+  =>  Template Name    : Poseify - Modeling Agency Website Template
+
+  =>  Template Link    : https://steprotech.com
+
+  =>  Template License : https://steprotech.com (or read the LICENSE.txt file)
+
+  =>  Template Author  : SteProTECH
+
+  =>  Author Website   : https://steprotech.com

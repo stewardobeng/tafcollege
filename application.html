@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TAF College - Application</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Spinner -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Header Start -->
+     <div class="container-fluid p-0">
+        <div id="site-header"></div>
+
+        <div class="page-header pb-5">
+            <div class="container text-center py-5">
+                <h1 class="display-4 text-uppercase mb-3 animated slideInDown">Application</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+                        <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item text-primary active" aria-current="page">Application</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Application Overview Start -->
+    <div class="container-fluid py-5 bg-secondary">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="title">
+                        <div class="title-left">
+                            <h5>Apply to TAF College</h5>
+                            <h1>Start Your Application</h1>
+                        </div>
+                    </div>
+                    <p class="mb-4">This application form is for prospective students. Provide accurate information so our admissions team can review your request quickly.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <div class="info-chip"><i class="fa fa-clock me-2 text-primary"></i>Complete in 10-15 mins</div>
+                        <div class="info-chip"><i class="fa fa-file-lines me-2 text-primary"></i>Docs requested after review</div>
+                        <div class="info-chip"><i class="fa fa-envelope me-2 text-primary"></i>Response within 7 days</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="application-panel">
+                        <h5 class="text-uppercase">Application Steps</h5>
+                        <div class="application-step">
+                            <span>01</span>
+                            <p>Choose your program and intake.</p>
+                        </div>
+                        <div class="application-step">
+                            <span>02</span>
+                            <p>Enter your personal and academic details.</p>
+                        </div>
+                        <div class="application-step">
+                            <span>03</span>
+                            <p>Submit and await admissions contact.</p>
+                        </div>
+                        <div class="application-step">
+                            <span>04</span>
+                            <p>Complete document review and interview.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Application Overview End -->
+
+    <!-- Application Form Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <form class="application-card" action="mailto:admissions@tafcollege.com" method="post" enctype="text/plain">
+                        <h4 class="text-uppercase mb-4">Student Application Form</h4>
+                        <div class="form-section">
+                            <h6 class="text-primary">Program Selection</h6>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-secondary border-0" id="program" name="program" required>
+                                            <option value="" selected>Select program</option>
+                                            <option>Fashion Design</option>
+                                            <option>Applied AI</option>
+                                            <option>Digital Marketing</option>
+                                            <option>Design, Build & Manage</option>
+                                        </select>
+                                        <label for="program">Program</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-secondary border-0" id="intake" name="intake" required>
+                                            <option value="" selected>Select intake</option>
+                                            <option>January</option>
+                                            <option>May</option>
+                                            <option>September</option>
+                                        </select>
+                                        <label for="intake">Preferred Intake</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-secondary border-0" id="studyMode" name="studyMode" required>
+                                            <option value="" selected>Select study mode</option>
+                                            <option>Full-time</option>
+                                            <option>Weekend</option>
+                                        </select>
+                                        <label for="studyMode">Study Mode</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h6 class="text-primary">Personal Details</h6>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="firstName" name="firstName" placeholder="First Name" required>
+                                        <label for="firstName">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="lastName" name="lastName" placeholder="Last Name" required>
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-secondary border-0" id="email" name="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control bg-secondary border-0" id="phone" name="phone" placeholder="Phone" required>
+                                        <label for="phone">Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control bg-secondary border-0" id="dob" name="dob" required>
+                                        <label for="dob">Date of Birth</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="nationality" name="nationality" placeholder="Nationality" required>
+                                        <label for="nationality">Nationality</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="address" name="address" placeholder="Address" required>
+                                        <label for="address">Current Address</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h6 class="text-primary">Academic Background</h6>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-secondary border-0" id="education" name="education" required>
+                                            <option value="" selected>Select highest level</option>
+                                            <option>WASSCE/SSSCE</option>
+                                            <option>Diploma</option>
+                                            <option>HND</option>
+                                            <option>Bachelor's</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <label for="education">Highest Education</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="school" name="school" placeholder="Last School" required>
+                                        <label for="school">Last School Attended</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="url" class="form-control bg-secondary border-0" id="portfolio" name="portfolio" placeholder="Portfolio Link">
+                                        <label for="portfolio">Portfolio Link (optional)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-secondary border-0" id="statement" name="statement" placeholder="Statement of Purpose" style="height: 140px" required></textarea>
+                                        <label for="statement">Statement of Purpose</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-section">
+                            <h6 class="text-primary">Emergency Contact</h6>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-secondary border-0" id="emergencyName" name="emergencyName" placeholder="Contact Name" required>
+                                        <label for="emergencyName">Contact Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control bg-secondary border-0" id="emergencyPhone" name="emergencyPhone" placeholder="Contact Phone" required>
+                                        <label for="emergencyPhone">Contact Phone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check form-note">
+                            <input class="form-check-input" type="checkbox" id="consent" name="consent" required>
+                            <label class="form-check-label" for="consent">
+                                I confirm that the information provided is accurate and I am applying as a student.
+                            </label>
+                        </div>
+                        <button class="btn btn-primary py-3 px-5 w-100" type="submit">Submit Application</button>
+                    </form>
+                </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="application-sidebar">
+                        <h5 class="text-uppercase">Required Documents</h5>
+                        <p class="mb-3">Our team will request these after review:</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Academic results or transcripts</li>
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Valid photo ID</li>
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Portfolio or samples (if required)</li>
+                            <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Reference letter</li>
+                        </ul>
+                        <div class="application-help">
+                            <h6>Need help?</h6>
+                            <p class="mb-2">Call or email admissions for guidance.</p>
+                            <p class="mb-1"><i class="fa fa-phone text-primary me-2"></i>+233 57 006 6000</p>
+                            <p class="mb-0"><i class="fa fa-envelope text-primary me-2"></i>admissions@tafcollege.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Application Form End -->
+
+    <!-- Footer Start -->
+    <div id="site-footer"></div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/partials.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
