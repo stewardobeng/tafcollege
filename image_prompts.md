@@ -65,9 +65,9 @@ This document contains text-to-image generation prompts tailored for the TAF Col
 **Context:** Cosmetology Course
 **Prompt:** A pristine beauty and cosmetology salon classroom. A student is practicing makeup application on a model, with various makeup palettes and brushes laid out. Clean, bright, high-key lighting.
 
-**File:** `img/program-design-build-manage.jpg`
-**Context:** Design, Build & Manage (Real Estate/Arch)
-**Prompt:** A construction site or architecture studio. An architect wearing a hard hat is pointing at a blueprint, with a modern building structure under construction in the background. Professional, industrial, dynamic.
+**File:** `img/youtuber-vlogger-content-creator-.jpg`
+**Context:** Photo and Video Production
+**Prompt:** A modern photo and video production studio with students operating a cinema camera, lighting equipment, microphones, and editing screens. Professional, creative, hands-on media training atmosphere.
 
 ---
 

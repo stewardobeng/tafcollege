@@ -152,9 +152,9 @@ const courses = [
     },
     {
         filename: 'course-design-build-manage.html',
-        title: 'Design, Build & Manage',
-        image: 'img/carousel-2.jpg',
-        description: 'Gain essential skills for the built environment. This course covers the fundamentals of architectural design, construction management, and facility maintenance. Prepare for a career in planning, building, and managing sustainable infrastructure.'
+        title: 'Photo and Video Production',
+        image: 'img/youtuber-vlogger-content-creator-.jpg',
+        description: 'Build the creative and technical skills to produce professional visual stories for digital platforms, brands, events, and media projects. This course covers concept development, camera operation, lighting, sound, editing, color correction, and final delivery.'
     }
 ];
 
