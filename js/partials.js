@@ -102,12 +102,22 @@
         '<div class="d-flex justify-content-center mb-4">' +
         '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-x-twitter"></i></a>' +
         '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-facebook-f"></i></a>' +
+        '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-instagram"></i></a>' +
+        '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-tiktok"></i></a>' +
         '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-youtube"></i></a>' +
         '<a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#"><i class="fab fa-linkedin-in"></i></a>' +
         '</div>' +
+        '<div class="d-flex flex-wrap justify-content-center gap-3 mb-4">' +
+        '<a class="text-light" href="about.html">About</a>' +
+        '<a class="text-light" href="service.html">Programs</a>' +
+        '<a class="text-light" href="admissions.html">Admissions</a>' +
+        '<a class="text-light" href="scholarships.html">Scholarships</a>' +
+        '<a class="text-light" href="application.html">Apply</a>' +
+        '<a class="text-light" href="contact.html">Contact</a>' +
+        '</div>' +
         '<p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i>1 Blohum Road, Dzorwulu, Accra-Ghana</p>' +
         '<p class="mb-2"><i class="fa fa-phone-alt me-2"></i>+233 57 006 6000</p>' +
-        '<p class="mb-4"><i class="fa fa-envelope me-2"></i><a href="mailto:admin@tafcollege.com" class="text-light">admin@tafcollege.com</a></p>' +
+        '<p class="mb-4"><i class="fa fa-envelope me-2"></i><a href="mailto:info@tafcollege.edu.gh" class="text-light">info@tafcollege.edu.gh</a></p>' +
         '<p>&copy; <a class="border-bottom" href="#">TAF College</a>, All Right Reserved.</p>' +
         '<p class="mb-0">Developed by <a class="border-bottom" href="https://steprotech.com">SteProTECH</a></p>' +
         '</div>' +
