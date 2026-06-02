@@ -1014,14 +1014,12 @@
     border: none !important;
     border-radius: 16px !important;
     display: block !important;
-    max-width: 100% !important;
-    max-height: calc(82vh - 80px) !important; /* Safe vertical ceiling to ensure perfect caption and button visibility */
-    object-fit: contain !important;
     margin: 0 auto !important;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85) !important; /* Premium rich shadow directly on the image */
+    box-shadow: 0 25px 75px rgba(0, 0, 0, 0.85) !important; /* Premium rich shadow directly on the image */
+    /* Remove any CSS max-width/max-height constraints to let Lightbox.js set natural, unsqueezed inline dimensions */
 }
 
-/* Transparent caption and details container aligned perfectly under the image */
+/* Transparent details container aligned perfectly under the image */
 #lightbox .lb-dataContainer {
     background: transparent !important;
     border: none !important;
@@ -1032,21 +1030,9 @@
     box-sizing: border-box !important;
 }
 
-/* Gold accented typography and responsive typography layout */
+/* Completely hide the name, description, and title details block to only show the image */
 #lightbox .lb-data .lb-details {
-    width: 85% !important;
-    float: left !important;
-    text-align: left !important;
-    line-height: 1.4 !important;
-}
-
-#lightbox .lb-data .lb-caption {
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: #ffffff !important;
-    letter-spacing: 0.5px !important;
-    font-family: 'Outfit', sans-serif !important;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important; /* Text shadow to ensure high contrast floating title */
+    display: none !important;
 }
 
 /* Hide image count label (since we disabled albums/navigation) */
@@ -1054,27 +1040,34 @@
     display: none !important;
 }
 
-/* Modern crisp CSS-drawn Close Button floating on the transparent background */
+/* Center the close button container directly below the floating image */
+#lightbox .lb-dataContainer .lb-closeContainer {
+    width: 100% !important;
+    text-align: center !important;
+    float: none !important;
+}
+
+/* Modern crisp CSS-drawn Close Button centered below the image */
 #lightbox .lb-data .lb-close {
-    display: block !important;
-    float: right !important;
-    width: 32px !important;
-    height: 32px !important;
+    display: inline-block !important;
+    float: none !important;
+    width: 42px !important;
+    height: 42px !important;
     background: none !important;
     position: relative !important;
-    opacity: 0.8 !important;
-    transition: all 0.25s ease !important;
+    opacity: 0.85 !important;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
     border-radius: 50% !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
-    background-color: rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(10, 10, 10, 0.7) !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
 #lightbox .lb-data .lb-close:hover {
     opacity: 1 !important;
     background-color: rgba(255, 255, 255, 0.2) !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-    transform: scale(1.08) !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.1) !important;
 }
 
 #lightbox .lb-data .lb-close::before,
@@ -1083,8 +1076,8 @@
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
-    width: 14px !important;
-    height: 1.5px !important;
+    width: 16px !important;
+    height: 2px !important;
     background-color: #ffffff !important;
     pointer-events: none !important;
 }
