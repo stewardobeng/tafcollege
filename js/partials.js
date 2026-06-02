@@ -13,15 +13,8 @@
         '<a href="index.html" class="nav-item nav-link">Home</a>' +
         '<a href="about.html" class="nav-item nav-link">About</a>' +
         '<a href="service.html" class="nav-item nav-link">Programs</a>' +
-        '<div class="nav-item dropdown" data-menu="admissions">' +
-        '<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admissions</a>' +
-        '<div class="dropdown-menu m-0">' +
-        '<a href="application.html" class="dropdown-item">Application Form</a>' +
-        '<a href="admissions.html" class="dropdown-item">Admissions</a>' +
-        '<a href="scholarships.html" class="dropdown-item">Scholarships</a>' +
-        '<a href="faq.html" class="dropdown-item">FAQs</a>' +
-        '</div>' +
-        '</div>' +
+        '<a href="admissions.html" class="nav-item nav-link">Admissions</a>' +
+        '<a href="faq.html" class="nav-item nav-link">FAQ</a>' +
         '<a href="team.html" class="nav-item nav-link">Staff</a>' +
         '<a href="contact.html" class="nav-item nav-link">Contact</a>' +
         '</div>' +
@@ -149,7 +142,6 @@
 
         var linkSelector = null;
         var isPrograms = page === "service.html" || page.indexOf("course-") === 0;
-        var admissionsPages = ["application.html", "admissions.html", "scholarships.html", "faq.html"];
 
         if (page === "index.html") {
             linkSelector = 'a.nav-link[href="index.html"]';
@@ -157,6 +149,10 @@
             linkSelector = 'a.nav-link[href="about.html"]';
         } else if (isPrograms) {
             linkSelector = 'a.nav-link[href="service.html"]';
+        } else if (page === "admissions.html" || page === "application.html" || page === "scholarships.html") {
+            linkSelector = 'a.nav-link[href="admissions.html"]';
+        } else if (page === "faq.html") {
+            linkSelector = 'a.nav-link[href="faq.html"]';
         } else if (page === "team.html") {
             linkSelector = 'a.nav-link[href="team.html"]';
         } else if (page === "contact.html") {
@@ -168,21 +164,6 @@
             if (link) {
                 link.classList.add("active");
             }
-        }
-
-        function setDropdownActive(menuName) {
-            var toggle = nav.querySelector('[data-menu="' + menuName + '"] .nav-link');
-            if (toggle) {
-                toggle.classList.add("active");
-            }
-            var item = nav.querySelector('[data-menu="' + menuName + '"] .dropdown-item[href="' + page + '"]');
-            if (item) {
-                item.classList.add("active");
-            }
-        }
-
-        if (admissionsPages.indexOf(page) !== -1) {
-            setDropdownActive("admissions");
         }
     }
 
