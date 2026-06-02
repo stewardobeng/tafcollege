@@ -128,15 +128,36 @@
 }
 
 @media (max-width: 991.98px) {
+    /* Style the expanded mobile collapse menu as a beautiful dark floating card container */
+    .navbar .navbar-collapse {
+        background: rgba(15, 15, 15, 0.98) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 16px !important;
+        padding: 15px 25px !important;
+        margin-top: 15px !important;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6) !important;
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important;
+    }
+
+    /* Remove old borders and layout margins */
+    .navbar .navbar-nav {
+        margin-top: 0 !important;
+        border-top: none !important;
+        padding: 0 !important;
+    }
+
+    /* Add spacing and subtle dividers between mobile menu items */
     .navbar .navbar-nav .nav-link,
     .navbar.bg-dark .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 12px 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
 
-    .navbar .navbar-nav {
-        margin-top: 8px;
-        border-top: 1px solid var(--bs-light);
+    /* Remove the divider line on the last link in the list */
+    .navbar .navbar-nav .nav-link:last-child {
+        border-bottom: none !important;
     }
 }
 
