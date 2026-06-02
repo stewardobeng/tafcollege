@@ -1000,38 +1000,35 @@
     outline: none !important;
 }
 
-/* Premium dark outer container for the image with thin glowing borders */
+/* Premium transparent outer container for the image (removes card background & borders) */
 #lightbox .lb-outerContainer {
-    background: rgba(20, 20, 20, 0.95) !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 20px !important;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    overflow: hidden !important;
 }
 
-/* Perfect square image display within safe viewport limits (leaving room for captions) */
+/* Beautiful floating image display with its own rounded corners and rich premium shadow */
 #lightbox .lb-image {
     border: none !important;
-    border-radius: 14px !important;
+    border-radius: 16px !important;
     display: block !important;
     max-width: 100% !important;
-    max-height: calc(85vh - 140px) !important; /* Secondary container constraint to prevent any overflow */
+    max-height: calc(82vh - 80px) !important; /* Safe vertical ceiling to ensure perfect caption and button visibility */
     object-fit: contain !important;
     margin: 0 auto !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85) !important; /* Premium rich shadow directly on the image */
 }
 
-/* Sleek dark caption and details container aligned perfectly under the outer container */
+/* Transparent caption and details container aligned perfectly under the image */
 #lightbox .lb-dataContainer {
-    background: rgba(20, 20, 20, 0.95) !important;
-    border-left: 1.5px solid rgba(255, 255, 255, 0.12) !important;
-    border-right: 1.5px solid rgba(255, 255, 255, 0.12) !important;
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.12) !important;
-    border-bottom-left-radius: 20px !important;
-    border-bottom-right-radius: 20px !important;
-    padding: 18px 25px !important;
-    margin: -1.5px auto 0 auto !important;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8) !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 16px 0 0 0 !important;
+    margin: 0 auto !important;
     box-sizing: border-box !important;
 }
 
@@ -1044,24 +1041,20 @@
 }
 
 #lightbox .lb-data .lb-caption {
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 700 !important;
     color: #ffffff !important;
     letter-spacing: 0.5px !important;
     font-family: 'Outfit', sans-serif !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important; /* Text shadow to ensure high contrast floating title */
 }
 
+/* Hide image count label (since we disabled albums/navigation) */
 #lightbox .lb-data .lb-number {
-    display: inline-block !important;
-    font-size: 12px !important;
-    color: var(--bs-primary) !important; /* Gold accent color matching TAF branding */
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    margin-top: 4px !important;
+    display: none !important;
 }
 
-/* Modern crisp CSS-drawn Close Button */
+/* Modern crisp CSS-drawn Close Button floating on the transparent background */
 #lightbox .lb-data .lb-close {
     display: block !important;
     float: right !important;
@@ -1069,18 +1062,19 @@
     height: 32px !important;
     background: none !important;
     position: relative !important;
-    opacity: 0.75 !important;
+    opacity: 0.8 !important;
     transition: all 0.25s ease !important;
     border-radius: 50% !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
 }
 
 #lightbox .lb-data .lb-close:hover {
     opacity: 1 !important;
-    background-color: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    transform: scale(1.05) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: scale(1.08) !important;
 }
 
 #lightbox .lb-data .lb-close::before,
@@ -1103,12 +1097,7 @@
     transform: translate(-50%, -50%) rotate(-45deg) !important;
 }
 
-/* Soft transition for hover zoom interactive effects on arrows */
+/* Disable navigation buttons since it's single-image display */
 #lightbox .lb-prev, #lightbox .lb-next {
-    opacity: 0.1 !important;
-    transition: opacity 0.3s ease !important;
-}
-
-#lightbox .lb-prev:hover, #lightbox .lb-next:hover {
-    opacity: 0.95 !important;
+    display: none !important;
 }
