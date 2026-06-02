@@ -22,13 +22,7 @@
         '<a href="faq.html" class="dropdown-item">FAQs</a>' +
         '</div>' +
         '</div>' +
-        '<div class="nav-item dropdown" data-menu="community">' +
-        '<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Community</a>' +
-        '<div class="dropdown-menu m-0">' +
-        '<a href="team.html" class="dropdown-item">Staff</a>' +
-        '<a href="testimonial.html" class="dropdown-item">Testimonials</a>' +
-        '</div>' +
-        '</div>' +
+        '<a href="team.html" class="nav-item nav-link">Staff</a>' +
         '<a href="contact.html" class="nav-item nav-link">Contact</a>' +
         '</div>' +
         '<div class="d-none d-lg-flex">' +
@@ -156,7 +150,6 @@
         var linkSelector = null;
         var isPrograms = page === "service.html" || page.indexOf("course-") === 0;
         var admissionsPages = ["application.html", "admissions.html", "scholarships.html", "faq.html"];
-        var communityPages = ["team.html", "testimonial.html"];
 
         if (page === "index.html") {
             linkSelector = 'a.nav-link[href="index.html"]';
@@ -164,6 +157,8 @@
             linkSelector = 'a.nav-link[href="about.html"]';
         } else if (isPrograms) {
             linkSelector = 'a.nav-link[href="service.html"]';
+        } else if (page === "team.html") {
+            linkSelector = 'a.nav-link[href="team.html"]';
         } else if (page === "contact.html") {
             linkSelector = 'a.nav-link[href="contact.html"]';
         }
@@ -188,10 +183,6 @@
 
         if (admissionsPages.indexOf(page) !== -1) {
             setDropdownActive("admissions");
-        }
-
-        if (communityPages.indexOf(page) !== -1) {
-            setDropdownActive("community");
         }
     }
 

@@ -57,6 +57,23 @@
             items: 1,
             dotsData: true,
         });
+
+        // Profile Modal populate
+        $('.team-item').click(function (e) {
+            var name = $(this).attr('data-name');
+            var role = $(this).attr('data-role');
+            var bio = $(this).attr('data-bio');
+            var img = $(this).attr('data-img');
+            
+            if (name) {
+                e.preventDefault();
+                $('#modalProfileImg').attr('src', img);
+                $('#modalProfileImg').attr('alt', name);
+                $('#modalProfileName').text(name);
+                $('#modalProfileRole').text(role);
+                $('#modalProfileBio').text(bio);
+            }
+        });
     };
 
     if (window.partialsReady && typeof window.partialsReady.then === 'function') {
