@@ -268,9 +268,9 @@
 }
 
 .page-header {
-    padding-top: 145px;
-    padding-bottom: 2rem;
-    min-height: 260px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +280,7 @@
 }
 
 .page-header.pb-5 {
-    padding-bottom: 2rem !important;
+    padding-bottom: 100px !important;
 }
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
