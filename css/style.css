@@ -268,15 +268,19 @@
 }
 
 .page-header {
-    padding-top: 200px;
-    padding-bottom: 100px;
-    min-height: 400px;
+    padding-top: 145px;
+    padding-bottom: 2rem;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/banner-bg.jpg) top center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .72), rgba(0, 0, 0, .72)), url(../img/headerbackground.png) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+.page-header.pb-5 {
+    padding-bottom: 2rem !important;
 }
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
@@ -366,13 +370,20 @@
     display: inline-block;
 }
 
+.service-item .service-img img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0 !important;
+}
+
 .service-item.service-item-left {
-    border-radius: 500px 0 0 500px;
+    border-radius: 0;
     background: linear-gradient(to right, var(--bs-dark), #ffffff);
 }
 
 .service-item.service-item-right {
-    border-radius: 0 500px 500px 0;
+    border-radius: 0;
     background: linear-gradient(to left, var(--bs-dark), #ffffff);
 }
 
@@ -396,7 +407,7 @@
 @media (max-width: 767.98px) {
     .service-item.service-item-left,
     .service-item.service-item-right {
-        border-radius: 500px 500px 0 0;
+        border-radius: 0;
         background: linear-gradient(to bottom, var(--bs-dark), #ffffff);
         text-align: center;
     }
@@ -537,17 +548,17 @@
 .footer.bg-dark {
     background-color: #070707 !important;
     background-image:
-        radial-gradient(circle at 1px 1px, rgba(229, 196, 92, .18) 1px, transparent 0),
-        linear-gradient(135deg, rgba(255, 255, 255, .055) 25%, transparent 25%),
-        linear-gradient(225deg, rgba(255, 255, 255, .035) 25%, transparent 25%);
+        radial-gradient(circle at 1px 1px, rgba(229, 196, 92, .072) 1px, transparent 0),
+        linear-gradient(135deg, rgba(255, 255, 255, .022) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(255, 255, 255, .014) 25%, transparent 25%);
     background-position:
         0 0,
         0 0,
         0 0;
     background-size:
-        18px 18px,
-        36px 36px,
-        36px 36px;
+        48px 48px,
+        96px 96px,
+        96px 96px;
 }
 
 .footer .container {
