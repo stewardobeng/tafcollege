@@ -1,5 +1,7 @@
 :root {
     --bs-primary: #E5C45C;
+    --bs-light: #ffffff;
+    --bs-dark: #000000;
 }
 
 .text-primary {
@@ -584,6 +586,13 @@
     border-radius: 20px;
 }
 
+.about-production-img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
 .impact-stat {
     height: 100%;
     padding: 24px 18px;
@@ -812,7 +821,7 @@
 .news-date {
     display: block;
     margin-top: 16px;
-    color: rgba(255, 255, 255, .7);
+    color: var(--bs-white);
     font-size: 13px;
 }
 
@@ -950,7 +959,7 @@
 
 .form-note {
     margin: 10px 0 20px;
-    color: rgba(255, 255, 255, .8);
+    color: var(--bs-white);
 }
 
 .application-sidebar {
